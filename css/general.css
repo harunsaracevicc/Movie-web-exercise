@@ -1,0 +1,49 @@
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  backdrop-filter: blur(1rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-star,
+.fa-star-half-alt {
+  font-size: 1.4rem;
+}
+
+.grid-cols--7 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: rem;
+}
+
+.flex-center-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
